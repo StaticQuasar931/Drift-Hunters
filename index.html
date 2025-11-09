@@ -1,122 +1,301 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Google</title>
-    <meta name="description" content="Drift Hunters is an online 3D car drifting game. Race on multiple challenging racetracks and customize your cars.">
-    <script type="text/javascript" src="/cloak.js"></script>
-  <meta name="robots" content="noindex,nofollow" />
-    <style>
-      body {
-  margin: 0;
-  padding: 0;
-}
-.webgl-content * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-.webgl-content {
-  position: absolute;
-}
-.webgl-content,
-#gameContainer,
-#unityContainer,
-canvas {
-  width: 100% !important;
-  height: 100% !important;
-}
-.webgl-content .logo,
-.progress {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.webgl-content .logo {
-  background: url("progressLogo.Light.png") no-repeat center/contain;
-  width: 354px;
-  height: 130px;
-}
-.webgl-content .progress {
-  height: 18px;
-  width: 141px;
-  margin-top: 90px;
-}
-.webgl-content .progress .empty {
-  background: url("progressEmpty.Light.png") no-repeat right/cover;
-  float: right;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-.webgl-content .progress .full {
-  background: url("progressFull.Light.png") no-repeat left/cover;
-  float: left;
-  width: 0%;
-  height: 100%;
-  display: inline-block;
-}
-.webgl-content .logo.Dark {
-  background-image: url(progressLogo.Dark.png);
-}
-.webgl-content .progress.Dark .empty {
-  background-image: url(progressEmpty.Dark.png);
-}
-.webgl-content .progress.Dark .full {
-  background-image: url(progressFull.Dark.png);
-}
-.webgl-content .footer {
-  margin-top: 5px;
-  height: 38px;
-  line-height: 38px;
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-  font-size: 18px;
-}
-.webgl-content .footer .webgl-logo,
-.title,
-.fullscreen {
-  height: 100%;
-  display: inline-block;
-  background: transparent center no-repeat;
-}
-.webgl-content .footer .webgl-logo {
-  background-image: url(webgl-logo.png);
-  width: 204px;
-  float: left;
-}
-.webgl-content .footer .title {
-  margin-right: 10px;
-  float: right;
-}
-.webgl-content .footer .fullscreen {
-  background-image: url(fullscreen.png);
-  width: 38px;
-  float: right;
-}
-    </style>
-  </head>
-  <body style="margin: 0 auto; overflow: hidden">
-  
-  
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 100%; height: 100%; margin: 0;"></div>
-  </div>
-    
-  </body>
-  <script src="UnityLoader2019.js"></script>
-  <script>
-  
-    var gameInstance = UnityLoader.instantiate("gameContainer", "dh.json");
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Drift Hunters - Unblocked Game - Play at School</title>
 
-    function UnityProgress(gameInstance, progress) {
-      if (!gameInstance.Module) {
-        return;
-      }
+  <!-- Primary SEO -->
+  <meta name="description" content="Play Drift Hunters unblocked in your browser. Customize cars, tune performance, and drift through multiple racetracks. School-safe, works on Chromebook.">
+  <link rel="canonical" href="https://staticquasar931.github.io/Drift-Hunters/">
+  <meta name="keywords" content="Drift Hunters, Drift Hunters unblocked, Drift Hunters game, Drift Hunters g@me, play Drift Hunters at school, working at school, school-safe drift game, unbl0cked car game, static, staticquasar, staticquasar931, static 931, staticq, staticq931, 931 games, 931 g@mes, car drift game unblocked, unity drift game, chromebook game, webgl racing game">
 
-    }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Drift Hunters - Unblocked Game">
+  <meta property="og:description" content="Tune, customize, and drift. Play Drift Hunters unblocked and school-safe, right in your browser.">
+  <meta property="og:url" content="https://staticquasar931.github.io/Drift-Hunters/">
+  <!-- If you have a cover image for this game, set it here -->
+  <!-- <meta property="og:image" content="https://cdn.jsdelivr.net/gh/StaticQuasar931/Images@main/drift-hunters-cover.jpg"> -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Drift Hunters - Unblocked Game">
+  <meta name="twitter:description" content="Play Drift Hunters unblocked. Customize cars and drift across tracks. Works at school.">
+  <!-- <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/StaticQuasar931/Images@main/drift-hunters-cover.jpg"> -->
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Drift Hunters",
+    "applicationCategory": "Game",
+    "operatingSystem": "Any",
+    "url": "https://staticquasar931.github.io/Drift-Hunters/",
+    "description": "Browser based 3D drifting game with car tuning, upgrades, and multiple racetracks. Unblocked and school-safe.",
+    "genre": ["Racing", "Drifting"],
+    "playMode": "SinglePlayer",
+    "author": { "@type": "Organization", "name": "StaticQuasar931" },
+    "publisher": { "@type": "Organization", "name": "StaticQuasar931" }
+  }
   </script>
 
+  <!-- Cloak (kept as provided) -->
+  <script type="text/javascript" src="/cloak.js"></script>
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --static-accent: #58a6ff;
+      --static-bg: #0b0f14;
+      --static-text: #e6eef8;
+      --badge-red: #e63946;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      color: #fff;
+    }
+    /* Unity container */
+    .webgl-content * { border: 0; margin: 0; padding: 0; }
+    .webgl-content { position: absolute; inset: 0; }
+    #gameContainer, #unityContainer, canvas { width: 100% !important; height: 100% !important; }
+
+    .webgl-content .logo, .progress {
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    }
+    .webgl-content .logo {
+      background: url("progressLogo.Light.png") no-repeat center/contain;
+      width: 354px; height: 130px;
+    }
+    .webgl-content .progress { height: 18px; width: 141px; margin-top: 90px; }
+    .webgl-content .progress .empty {
+      background: url("progressEmpty.Light.png") no-repeat right/cover;
+      float: right; width: 100%; height: 100%; display: inline-block;
+    }
+    .webgl-content .progress .full {
+      background: url("progressFull.Light.png") no-repeat left/cover;
+      float: left; width: 0%; height: 100%; display: inline-block;
+    }
+    .webgl-content .logo.Dark { background-image: url(progressLogo.Dark.png); }
+    .webgl-content .progress.Dark .empty { background-image: url(progressEmpty.Dark.png); }
+    .webgl-content .progress.Dark .full { background-image: url(progressFull.Dark.png); }
+
+    /* Static Menu - top left small link */
+    .static-menu {
+      position: fixed; top: 14px; left: 14px; z-index: 1000;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      user-select: none;
+    }
+    .static-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px; border-radius: 10px;
+      background: rgba(11, 15, 20, 0.8); color: var(--static-text);
+      text-decoration: none; font-weight: 600; font-size: 14px;
+      box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.15), 0 6px 18px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+      transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+      animation: staticTwinkle 3.5s ease-in-out infinite;
+    }
+    .static-link:hover { transform: translateY(-1px); box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.35), 0 10px 26px rgba(0,0,0,0.5); }
+    .static-close {
+      margin-left: 8px; cursor: pointer; opacity: .8; font-size: 12px;
+      background: transparent; border: 0; color: #b7c9e6; padding: 2px 6px; border-radius: 6px;
+    }
+    .static-close:hover { opacity: 1; background: rgba(255,255,255,0.08); }
+    @keyframes staticTwinkle {
+      0%, 100% { box-shadow: 0 0 0 2px rgba(88,166,255,0.15), 0 6px 18px rgba(0,0,0,0.35); }
+      50% { box-shadow: 0 0 0 2px rgba(88,166,255,0.35), 0 8px 22px rgba(0,0,0,0.45); }
+    }
+    /* Game label block below the menu */
+    .game-label {
+      margin-top: 8px; display: inline-flex; padding: 6px 10px;
+      border-radius: 8px; background: rgba(255,255,255,0.08); color: #f1f5fb; font-size: 12px;
+    }
+
+    /* Rotating icon widget - bottom right */
+    .rotator {
+      position: fixed; right: 16px; bottom: 16px; z-index: 1000;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    .rotator-item {
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+      background: rgba(11, 15, 20, 0.85); color: #eaf2ff; border-radius: 14px;
+      padding: 8px 12px; transform: translateX(140%); opacity: 0;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.45), 0 0 0 2px rgba(88,166,255,0.15);
+      backdrop-filter: blur(6px);
+    }
+    .rotator-item.show { animation: slideIn .5s ease forwards; }
+    @keyframes slideIn {
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .rotator-item img {
+      width: 28px; height: 28px; object-fit: contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.45));
+      animation: iconSpin 6s linear infinite;
+    }
+    @keyframes iconSpin { 0% { transform: rotate(0deg);} 100% { transform: rotate(360deg);} }
+    .rotator-label { font-weight: 600; font-size: 13px; }
+    .badge {
+      min-width: 18px; height: 18px; padding: 0 6px; border-radius: 999px;
+      background: var(--badge-red); color: #fff; font-size: 12px; line-height: 18px; text-align: center;
+      margin-left: 4px;
+    }
+
+    /* Hidden SEO block */
+    .seo-hidden {
+      position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;
+    }
+
+    /* Accessibility helper for no-js notice */
+    .no-js {
+      position: absolute; inset: 0; display: grid; place-items: center;
+      background: #0b0f14; color: #dbeafe; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      padding: 24px; text-align: center;
+    }
+
+    /* Respect safe areas on mobile */
+    @supports(padding: max(0px)) {
+      .static-menu { top: max(14px, env(safe-area-inset-top)); left: max(14px, env(safe-area-inset-left)); }
+      .rotator { right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body style="margin:0 auto; overflow:hidden">
+  <!-- Static Menu - small visible link with 3 minute reappear -->
+  <div class="static-menu" id="staticMenu">
+    <a class="static-link" href="https://sites.google.com/view/staticquasar931/gm3z" target="_blank" rel="noopener">
+      <span>More Unblocked Games by Static</span>
+      <button class="static-close" type="button" aria-label="Hide menu for a while" id="staticClose">✕</button>
+    </a>
+    <div class="game-label" aria-hidden="true">Drift Hunters - unblocked</div>
+  </div>
+
+  <!-- Rotating slide-in icon widget: Google Form → Discord → Instagram -->
+  <div class="rotator" id="rotator" aria-live="polite">
+    <a class="rotator-item" id="rotItem" href="#" target="_blank" rel="noopener">
+      <img id="rotImg" alt="Static link">
+      <span class="rotator-label" id="rotText">Connect</span>
+      <span class="badge" id="rotBadge" aria-label="New">1</span>
+    </a>
+  </div>
+
+  <!-- Unity WebGL game area -->
+  <noscript>
+    <div class="no-js">
+      <p>This game requires JavaScript. Please enable it to play Drift Hunters.</p>
+    </div>
+  </noscript>
+  <div class="webgl-content" role="main" aria-label="Drift Hunters game area">
+    <div id="gameContainer" style="width:100%;height:100%;margin:0;"></div>
+  </div>
+
+  <!-- Hidden SEO content -->
+  <div class="seo-hidden">
+    <h1>Play Drift Hunters Unblocked - School Safe Browser Game</h1>
+    <p>
+      Drift Hunters is a 3D car drifting game you can play right in your browser without downloads or sign ups. Build your dream drift car with upgrades, fine tuned suspension, and performance parts, then master smooth slides across multiple racetracks. This version is unblocked and school safe, designed to work on Chromebooks and classroom networks. If a version ever fails to load, try again or explore more unblocked titles on StaticQuasar931. The focus is simple fun, low friction access, and reliable performance for quick sessions or long drift runs. Earn points for style, link corners with precision, and unlock more cars as you improve. Many players look for terms like drift game unblocked, car drifting at school, and working at school drift g@me — this page is built to help you find and play quickly. For more games and backups, visit the Static games list below.
+    </p>
+    <ul>
+      <li><a href="https://sites.google.com/view/staticquasar931" rel="nofollow">StaticQuasar931 homepage</a></li>
+      <li><a href="https://sites.google.com/view/staticquasar931/gm3z" rel="nofollow">All unblocked games by Static</a></li>
+      <li><a href="https://sites.google.com/view/staticquasar931/gm3z/subway-surfers_1/subway-surfers-main?authuser=0" rel="nofollow">Play Subway Surfers - main</a></li>
+      <li><a href="https://sites.google.com/view/staticquasar931/static-gmes/statics-idle-merge-strategy" rel="nofollow">Static's Idle Merge Strategy</a></li>
+      <li><a href="https://sites.google.com/view/staticquasar931/gm3z/coreball" rel="nofollow">Core Ball</a></li>
+    </ul>
+    <p>
+      Keywords include: Drift Hunters unblocked, Drift Hunters game, Drift Hunters g@me, car drift game unblocked, racing game working at school, school safe unblocked, chromebook drift game, 931 games, staticquasar931 games. Brand terms used: static, staticquasar, staticquasar931, static 931, staticq, staticq931.
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="UnityLoader2019.js"></script>
+  <script>
+    // Initialize Unity
+    var gameInstance = UnityLoader.instantiate("gameContainer", "dh.json");
+    function UnityProgress(instance, progress) { /* kept minimal on purpose */ }
+
+    // Leave warning
+    window.onbeforeunload = function () {
+      return "Are you sure you want to leave this page? Your session will reset.";
+    };
+
+    // Static Menu hide and timed return (3 minutes)
+    (function(){
+      var menu = document.getElementById('staticMenu');
+      var btn = document.getElementById('staticClose');
+      var HIDE_MS = 3 * 60 * 1000; // 3 minutes
+      function showMenu(){ menu.style.display = 'block'; menu.style.opacity = '1'; }
+      function hideMenu(){
+        menu.style.opacity = '0';
+        setTimeout(function(){ menu.style.display = 'none'; }, 200);
+        setTimeout(showMenu, HIDE_MS);
+      }
+      btn.addEventListener('click', function(e){ e.preventDefault(); hideMenu(); });
+    })();
+
+    // Rotator: Google Form → Discord → Instagram (assets and links from Static standard)
+    (function(){
+      var order = [
+        {
+          text: "Suggest a Game",
+          url: "https://sites.google.com/view/staticquasar931/google-form",
+          img: "https://cdn.jsdelivr.net/gh/StaticQuasar931/Images@main/GoogleForm.png",
+          alt: "Google Form"
+        },
+        {
+          text: "Join our Discord",
+          url: "https://discord.gg/DP2hM7RRhR",
+          img: "https://cdn.jsdelivr.net/gh/StaticQuasar931/Images@main/Join_Our_DC_StaticQuassar931_lcplrf.png",
+          alt: "Discord"
+        },
+        {
+          text: "Follow our Instagram",
+          url: "https://www.instagram.com/freeschoolgamepage/",
+          img: "https://cdn.jsdelivr.net/gh/StaticQuasar931/Images@main/Follow-us--IG",
+          alt: "Instagram"
+        }
+      ];
+      var idx = 0;
+      var a = document.getElementById('rotItem');
+      var img = document.getElementById('rotImg');
+      var txt = document.getElementById('rotText');
+      var badge = document.getElementById('rotBadge');
+
+      function apply(item) {
+        a.href = item.url;
+        img.src = item.img;
+        img.alt = item.alt;
+        txt.textContent = item.text;
+      }
+      function showOnce() {
+        a.classList.add('show');
+        setTimeout(function(){ a.classList.remove('show'); }, 4200);
+      }
+      function cycle() {
+        apply(order[idx]);
+        showOnce();
+        idx = (idx + 1) % order.length;
+      }
+      // First run fast then every 5.5s
+      cycle();
+      setInterval(cycle, 5500);
+      // Example badge behavior
+      var unseen = 1;
+      setInterval(function(){
+        unseen = (unseen % 9) + 1;
+        badge.textContent = unseen;
+      }, 6000);
+    })();
+  </script>
+
+  <!-- Keep body last script block small and focused on Unity layout only -->
+  <script>
+    // Improve mobile viewport fit
+    document.documentElement.style.setProperty('viewport-fit', 'cover');
+  </script>
+</body>
 </html>
